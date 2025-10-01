@@ -33,6 +33,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin-bottom: 2rem;
 }
 
 #app {
@@ -40,6 +41,63 @@ h1 {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+.operators-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem auto;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.operators-table thead {
+  background-color: #2a2a2a;
+}
+
+.operators-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.87);
+  border-bottom: 2px solid #3a3a3a;
+}
+
+.operators-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #2a2a2a;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.operators-table tbody tr:hover {
+  background-color: #252525;
+}
+
+.operators-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.price-input {
+  width: 100px;
+  padding: 0.5rem;
+  border: 1px solid #3a3a3a;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 1em;
+  font-family: inherit;
+  transition: border-color 0.25s;
+}
+
+.price-input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.price-input-clicked {
+  border: 3px solid #646cff !important;
+  font-weight: bold;
 }
 
 .logo {
@@ -92,5 +150,34 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+  
+  .operators-table {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .operators-table thead {
+    background-color: #f5f5f5;
+  }
+  
+  .operators-table th {
+    color: #213547;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  .operators-table td {
+    color: #213547;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .operators-table tbody tr:hover {
+    background-color: #fafafa;
+  }
+  
+  .price-input {
+    background-color: #ffffff;
+    color: #213547;
+    border: 1px solid #ccc;
   }
 }
